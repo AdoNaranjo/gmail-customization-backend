@@ -1,0 +1,10 @@
+.gitignore
+.idea/
+.vscode/
+.env
+README.md
+node_modules
+data
+dist
+.cirlceci/
+.env.circleci
