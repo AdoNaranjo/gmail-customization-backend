@@ -1,15 +1,15 @@
 {
-  "name": "grantusfunding-backend-ts",
+  "name": "gmail-customization-backend",
   "engines": {
-    "node": "16.6.1"
+    "node": "12.18.3"
   },
   "version": "0.1.0",
-  "description": "Grant US Funding Backend with TypeScript",
+  "description": "Gmail Customization Backend with TypeScript",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jasonbhart/grantusfunding-api"
+    "url": "https://github.com/AdoNaranjo/gmail-customization-backend"
   },
-  "author": "Juan Cortes",
+  "author": "Adolfo Naranjo",
   "scripts": {
     "start": "yarn run serve",
     "build": "rm -rf dist/* && yarn run build-ts && yarn run lint",
