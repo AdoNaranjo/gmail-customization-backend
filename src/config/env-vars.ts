@@ -2,8 +2,9 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export const APP_URL = process.env["APP_URL"];
-export const APP_PORT = process.env.APP_PORT || 8000;
-export const APP_URI = `${APP_URL}:${APP_PORT}`;
+export const URL = process.env["URL"];
+export const PORT = process.env.PORT || 8000;
+export const APP_URI = APP_URL ? APP_URL : `${URL}:${PORT}`;
 export const APP_DEBUG = Boolean(JSON.parse(String(process.env["APP_DEBUG"]).toLowerCase()));
 export const NODE_ENV = process.env.NODE_ENV;
 export const MONGODB_URI_SCHEME = process.env["MONGODB_URI_SCHEME"] ? process.env["MONGODB_URI_SCHEME"] : "mongodb";
