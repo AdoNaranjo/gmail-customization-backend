@@ -1,5 +1,8 @@
 {
   "name": "grantusfunding-backend-ts",
+  "engines": {
+    "node": "16.6.1"
+  },
   "version": "0.1.0",
   "description": "Grant US Funding Backend with TypeScript",
   "repository": {
