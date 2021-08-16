@@ -1,7 +1,7 @@
 {
   "name": "gmail-customization-backend",
   "engines": {
-    "node": "12.18.3"
+    "node": "12.x"
   },
   "version": "0.1.0",
   "description": "Gmail Customization Backend with TypeScript",
