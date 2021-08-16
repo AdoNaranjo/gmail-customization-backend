@@ -18,9 +18,6 @@ public/css/main.css
 # Coverage reports
 coverage
 
-# API keys and secrets
-.env
-
 google-secret.json
 
 # Dependency directory
