@@ -4,6 +4,7 @@ export interface AccountProps extends Document {
   email: string;
   refreshToken: string;
   code: string;
+  isNewUser: boolean;
   createdAt?: Date;
   updatedAt?: Date;
 }
@@ -14,6 +15,7 @@ const AccountSchema: Schema = new Schema(
     email: { type: String },
     refreshToken: { type: String },
     code: { type: String },
+    isNewUser: { type: Boolean },
     createdAt: { type: Date },
     updatedAt: { type: Date },
   },

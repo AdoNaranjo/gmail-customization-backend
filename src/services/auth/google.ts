@@ -60,6 +60,7 @@ export const saveAuthCode = async (queries: AuthQueryResultRequest): Promise<Acc
         email: userData.email,
         refreshToken: tokenData.refresh_token,
         code: queries.code,
+        isNewUser: false,
       });
       await account.save();
     } else {
@@ -72,6 +73,7 @@ export const saveAuthCode = async (queries: AuthQueryResultRequest): Promise<Acc
             email: userData.email,
             refreshToken: tokenData.refresh_token,
             code: queries.code,
+            isNewUser: false,
           },
         },
         { new: true }

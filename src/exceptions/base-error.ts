@@ -3,7 +3,7 @@ import { ExtendableError } from "ts-error";
 
 export default class BaseError extends ExtendableError {
   code: number = HttpStatus.INTERNAL_SERVER_ERROR;
-  constructor(m: string, code: number, name?: string) {
+  constructor (m: string, code: number, name?: string) {
     super(m);
     // Set the prototype explicitly.
     Object.setPrototypeOf(this, BaseError.prototype);
@@ -11,7 +11,7 @@ export default class BaseError extends ExtendableError {
     this.name = name ? name : this.constructor.name;
   }
 
-  getCode(): number {
+  getCode (): number {
     return this.code;
   }
 }
